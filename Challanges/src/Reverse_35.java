@@ -21,7 +21,6 @@ public class Reverse_35 {
             newNumber = newNumber * 10 + digit;
             num /= 10;
 
-
         }
         return newNumber;
     }
