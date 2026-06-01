@@ -14,6 +14,6 @@ public class ArrayMInMax_42 {
             i++;
         }
         System.out.println("Mininum Array is : " + Min);
-        System.out.println("Maimum Array is : " + Max);
+        System.out.println("Maximum Array is : " + Max);
     }
 }
