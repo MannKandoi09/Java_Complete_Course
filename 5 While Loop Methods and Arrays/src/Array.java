@@ -23,6 +23,12 @@ public class Array {
             System.out.println(myArr[index]);
 
             index++;
+
+            String[] strArr = new String[4];
+            strArr[0] = "My String";
+
+            String[] newStrArr = {"first", "second", "third"};
+            System.out.println(newStrArr.length);
         }
     }
 }
