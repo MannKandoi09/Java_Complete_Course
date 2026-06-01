@@ -10,7 +10,7 @@ public class ArrayUtility {
         int[] nums = new int[size];
         int i = 0;
         while (i < size){
-            System.out.println("Enter element no " + (i+1) + " :");
+            System.out.print("Enter element no " + (i+1) + " : ");
             nums[i] = scan.nextInt();
             i++;
         }
