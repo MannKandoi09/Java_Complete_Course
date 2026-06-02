@@ -13,20 +13,24 @@ public class Car {
     int noOfSeats;
 
     //Instance Methods
-    public void drive(){
+    public Car start(){
         if (currentFuelInLiters <= 0){
-            System.out.println("Car is Out of Fuel");
+            System.out.println("Car is Out of Fuel, can not start");
         } else if (currentFuelInLiters <= 5) {
             System.out.println("Car is in Reserve Mode, Please Refuel");
-            currentFuelInLiters--;
         }else{
-            System.out.println("Car is Driving..");
-            currentFuelInLiters--;
+            System.out.println("Car is Started.. bruhhhhh");
+
         }
+        return this;
+    }
+    public void drive(){
+            currentFuelInLiters--;
+            System.out.println("Car is Driving..");
     }
 
-    public void addFuel(float fuel){
-        currentFuelInLiters += fuel;
+    public void addFuel(float currentFuelInLiters){
+        this.currentFuelInLiters += currentFuelInLiters;
 
     }
 
