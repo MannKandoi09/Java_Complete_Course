@@ -1,5 +1,7 @@
 public class Car {
 
+    static int noOfCarsSold;
+
 
     //Properties Or Instance Variables
     int noOfWheels;
@@ -11,6 +13,15 @@ public class Car {
     float currentFuelInLiters;
 
     int noOfSeats;
+
+    static {
+        noOfCarsSold = 0;
+        System.out.println("I am in Static Block");
+    }
+    {
+        noOfCarsSold++;
+        System.out.println("I am init Block");
+    }
 
     Car(String color){
         this.color = color;
