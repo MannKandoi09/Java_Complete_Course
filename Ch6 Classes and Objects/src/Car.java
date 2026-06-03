@@ -12,6 +12,20 @@ public class Car {
 
     int noOfSeats;
 
+    Car(String color){
+        this.color = color;
+        noOfWheels = 4;
+        maxSpeed =  150;
+        currentFuelInLiters = 2;
+        noOfSeats = 5;
+    }
+    Car(){
+        //Constructor Chaining
+       this("Black");
+       currentFuelInLiters = 5;
+    }
+
+
     //Instance Methods
     public Car start(){
         if (currentFuelInLiters <= 0){
