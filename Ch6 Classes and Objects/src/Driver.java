@@ -1,4 +1,19 @@
 public class Driver {
+
+    static int minAgeOfDriving = 18;
+
+    int age;
+
+    String name;
+
+    String dateOfLicense;
+
+    public boolean isAllowedToDrive(){
+        return this.age >= minAgeOfDriving;
+    }
+
+
+
     public static void main(String[] args) {
 //        Car myCar = new Car();
 //        myCar.addFuel(6);
@@ -14,6 +29,8 @@ public class Driver {
         swift.addFuel(6);
         swift.start().drive();
 
-
+        Driver myDriver = new Driver();
+        myDriver.dateOfLicense = "1/Jan/2020";
+        System.out.println(minAgeOfDriving);
     }
 }
