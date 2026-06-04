@@ -6,6 +6,25 @@ public class SwitchStatement {
         System.out.print("Enter Number 1-7 for Finding Which Week Day it is : ");
         int day = scan.nextInt();
 
+        oldSwitch(day);
+        newSwitch(day);
+    }
+
+    public static void newSwitch(int day){
+        String dayStr = switch (day){
+            case 1 -> "Monday";
+            case 2 -> "tuesday";
+            case 3 -> "wednesday";
+            case 4 -> "thursday";
+            case 5 -> "friday";
+            case 6 -> "saturday";
+            case 7 -> "sunday";
+            default ->  "invalid";
+
+        };
+        System.out.println(dayStr);
+    }
+    public static void oldSwitch(int day){
         switch (day){
             case 1:
                 System.out.println("Monday");
@@ -31,5 +50,6 @@ public class SwitchStatement {
             default:
                 System.out.println("Invalid Number");
         }
+
     }
 }
