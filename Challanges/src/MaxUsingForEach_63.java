@@ -1,13 +1,13 @@
 public class MaxUsingForEach_63 {
     public static void main(String[] args) {
-        int[] arr = {10,9,54,45,18};
-        int max = arr[0];
+      int[] arr = ArrayUtility.inputArray();
+      int max = Integer.MIN_VALUE;
 
-        for (int i = 1; i < arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
-            }
-        }
-        System.out.println("Max Number in array is: " +max);
+      for (int num : arr){
+          if (max < num){
+              max = num;
+          }
+      }
+        System.out.println("Maximum Number is: " + max);
     }
 }
