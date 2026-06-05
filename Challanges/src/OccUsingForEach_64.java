@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OccUsingForEach {
+public class OccUsingForEach_64 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] arr = ArrayUtility.inputArray();
