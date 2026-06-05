@@ -6,7 +6,7 @@ public class Break_65 {
         while (true){
             System.out.print("Enter your Command: ");
             String command = scan.next();
-            if (command.equals("exit")){
+            if (command.equalsIgnoreCase("exit")){
                 break;
             }
         }
