@@ -1,4 +1,8 @@
 package in.mkcoding.abstraction;
 
-public class Vechicle  {
+public class Vehicle {
+
+    private int noOfTires;
+
+    
 }
