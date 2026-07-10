@@ -4,10 +4,11 @@ public class TestTransport {
     public static void main(String[] args) {
         Car c = new Car();
         Vehicle veh = new Vehicle();
+        c.start();
         Plane p = new Plane();
-
+        p.start();
         //casteTest(veh);
-        casteTest(c);
+        //casteTest(c);
         //casteTest(p);
 
        // Vehicle vCar = new Car();
