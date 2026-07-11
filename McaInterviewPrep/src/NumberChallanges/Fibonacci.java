@@ -7,6 +7,7 @@ public class Fibonacci {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter Number you want to print upto Fibonacci Series: ");
         int num = scan.nextInt();
+
         int a = 0;
         int b = 1;
         System.out.print(a + " " + b+ " ");
