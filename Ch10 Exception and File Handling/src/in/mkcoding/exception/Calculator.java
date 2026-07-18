@@ -17,6 +17,8 @@ public class Calculator {
 
             System.out.printf("%s, Enter Valid Values",
                     exception.getMessage());
+        }catch (Throwable th){
+            System.out.println("General Exception..");
         }
 
     }
