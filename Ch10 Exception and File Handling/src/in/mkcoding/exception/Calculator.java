@@ -4,6 +4,19 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+       a();
+
+    }
+    private static void a(){
+        b();
+    }
+    private static void b(){
+        c();
+    }
+    private static void c(){
+        d();
+    }
+    private static void d(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to Division Calculator");
         System.out.println("Please Enter your two Numbers: ");
@@ -22,6 +35,5 @@ public class Calculator {
             System.out.println("General Exception..");
             throw th;
         }
-
     }
 }
