@@ -25,15 +25,18 @@ public class Calculator {
 
         try{
             int[] a = new int[5];
-            System.out.printf("Result is %d", a[6]);
-            a[6] = first / second;
-            System.out.printf("Result is %d", a[6]);
+           // System.out.printf("Result is %d", a[6]);
+            //a[6] = first / second;
+            //System.out.printf("Result is %d", a[6]);
         }catch (ArithmeticException exception){
             System.out.printf("%s, Enter Valid Values",
                     exception.getMessage());
+            System.out.println();
         }catch (Throwable th){
             System.out.println("General Exception..");
             throw th;
+        }finally {
+            System.out.println("I am in Finally Block");
         }
     }
 }
