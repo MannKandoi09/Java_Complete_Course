@@ -11,14 +11,16 @@ public class Calculator {
         int second = scan.nextInt();
 
         try{
-            int result = first / second;
-            System.out.printf("Result is %d", result);
+            int[] a = new int[5];
+            System.out.printf("Result is %d", a[6]);
+            a[6] = first / second;
+            System.out.printf("Result is %d", a[6]);
         }catch (ArithmeticException exception){
-
             System.out.printf("%s, Enter Valid Values",
                     exception.getMessage());
         }catch (Throwable th){
             System.out.println("General Exception..");
+            throw th;
         }
 
     }
